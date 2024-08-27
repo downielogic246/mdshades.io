@@ -1,0 +1,110 @@
+/* Layout */
+
+
+#logo{
+    background-image: url(/photos/DL_logo_only.png);
+    background-size: cover;
+    width: 150px;
+    height: 80px;
+    background-repeat: no-repeat;
+    /* max-height: 75px; */
+    position: relative;
+        top: 0;
+        left: 15px;
+    }
+
+.nav-links {
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: 75px;
+    list-style-type: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--main-font-colour);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    transition: color 200ms ease-out;
+}
+
+.links::after {
+    content: " ";
+    border-bottom: 3px solid var(--main-font-colour);
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    transform: scaleX(0);
+    transition: transform 350ms ease-out;
+}
+
+.links:hover {
+    color: var(--third-heading-colour);
+}
+
+.links:hover::after {
+    transform: scaleX(1);
+    border-bottom-color: var(--third-heading-colour);
+}
+
+.small-head{
+    position: fixed;
+    flex-direction: row;
+    display: flex;
+    z-index: 999;
+}
+.active{
+    color: var(--third-heading-colour);
+}
+.big-head{
+    display: flex;
+}
+/* 
+.navBtn-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    width: max-content;
+    height: max-content;
+} */
+/* 
+.navBtn{
+    color: var(--third-heading-colour);
+    cursor: pointer;
+    font-size: 2.5rem;
+    width: 50px;
+    border-radius: 100px;
+    border: 0;
+    background: none;
+} */
+/* 
+.show{
+    display: flex;
+} */
+/* 
+.showSmallNav{
+    right: 0;
+} */
+/* .noShow{
+    display: none;
+}
+ */
